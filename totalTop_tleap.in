@@ -1,0 +1,11 @@
+source leaprc.gaff2
+ADH = loadmol2 PhCHO.mol2
+YLD = loadmol2 Ylide_nPr.mol2
+THF = loadmol2 THF.mol2
+AdtTHFbox = loadpdb total_top.pdb
+loadamberparams PhCHO.frcmod
+loadamberparams Ylide_nPr.frcmod
+loadamberparams THF.frcmod
+saveamberparm AdtTHFbox totalTop.prmtop totalTop.inpcrd
+quit
+  
